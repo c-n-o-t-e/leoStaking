@@ -62,7 +62,7 @@ program aleostaking.aleo {
 
                 Mapping::set(stake_info, manager, StakingInfo {
                     user: user,
-                    daily_reward: daily_reward,
+                    daily_reward: stake_result.daily_reward,
                     acc_token_per_share: acc_token_per_share,
                     last_reward_block: block.height,
                     total_staked: stake_result.total_staked.add(amount)
